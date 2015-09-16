@@ -37,7 +37,11 @@ module.exports = function(opts) {
                 path: _fName,
                 contents: new Buffer(text)
             }));
+            
+            _s.end();
         });
+        
+       
     // } catch (err) {
     //     _s.emit('error', err);
     // }
